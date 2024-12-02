@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2021", // Целевая версия JS
+    "target": "ES2021", 
     "module": "CommonJS", // Система модулей
     "rootDir": "./src", // Корневая папка исходного кода
     "outDir": "./dist", // Папка для компилированного кода
