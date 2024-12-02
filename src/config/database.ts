@@ -4,7 +4,7 @@ import "./enviroment";
 export async function connectMongoose() {
   try {
     const db =
-      process.env.NODE_ENV === "production"
+      process.env.NODE_ENV === "development"
         ? process.env.MONGO_DB_URL
         : process.env.ATLAS_URL;
     console.log(db);
