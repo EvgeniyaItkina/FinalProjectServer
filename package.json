@@ -29,9 +29,7 @@
     "nodemon": "^3.1.7",
     "rotating-file-stream": "^3.2.5",
     "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0"
-  },
-  "devDependencies": {
-    "@types/cors": "^2.8.17"
+    "ts-node-dev": "^2.0.0",
+     "@types/cors": "^2.8.17"
   }
 }
