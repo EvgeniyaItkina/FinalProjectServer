@@ -14,9 +14,10 @@ const app= express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://your-frontend-url.com"], 
-  methods: ["GET", "POST", "PUT", "DELETE"], 
-  credentials: true, 
+  origin: true,
+  methods: 'GET,PUT,POST,PATCH,DELETE,OPTIONS',
+  credentials: true,
+  allowedHeaders: 'Content-Type, Accept, Authorization',
 }));
 
 app.listen(PORT, async () => {
