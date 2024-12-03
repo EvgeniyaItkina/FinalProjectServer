@@ -9,8 +9,15 @@ import adminRoutes from "./routes/adminRoutes";
 import { seedProducts } from "./tools/seedProducts";
 import imagesRoute from "./routes/imagesRoute";
 import { setupLogging } from "./middlewares/log/morgan_logger";
-const app = express();
+import cors from "cors";
+const app= express();
 const PORT = process.env.PORT || 5000;
+
+app.use(cors({
+  origin: ["http://localhost:5173", "https://your-frontend-url.com"], 
+  methods: ["GET", "POST", "PUT", "DELETE"], 
+  credentials: true, 
+}));
 
 app.listen(PORT, async () => {
   await connectMongoose();
