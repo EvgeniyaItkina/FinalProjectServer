@@ -1,5 +1,4 @@
 import express from "express";
-import { Application } from "express-serve-static-core";
 import "./config/enviroment";
 import { connectMongoose } from "./config/database";
 import authRoutes from "./routes/authRoutes"; // пример подключения маршрутов
@@ -10,7 +9,7 @@ import adminRoutes from "./routes/adminRoutes";
 import { seedProducts } from "./tools/seedProducts";
 import imagesRoute from "./routes/imagesRoute";
 import { setupLogging } from "./middlewares/log/morgan_logger";
-const app: Application = express();
+const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, async () => {
