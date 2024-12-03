@@ -1,4 +1,5 @@
-import express, { Application } from "express";
+import express from "express";
+import { Application } from "express-serve-static-core";
 import "./config/enviroment";
 import { connectMongoose } from "./config/database";
 import authRoutes from "./routes/authRoutes"; // пример подключения маршрутов
