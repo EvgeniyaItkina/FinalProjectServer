@@ -37,46 +37,46 @@ Backend for the **Flying Teapot Shop**, an online tea store built as part of a F
 
 2. **Install dependencies:**
 
-npm install
+    npm install
 
 3. **Create a .env file in the root directory with the following variables:**
 
-NODE_ENV = "production" <br>
-PORT=2024 <br>
-JWT_SECRET="d3v3l0pm3nt4c2e2" <br>
-MONGO_DB_URL="mongodb://127.0.0.1:27017/tea-shop" # for local <br>
-ATLAS_URL="mongodb+srv://tea-shop:1q2w3e4r5t6y@cluster0.ectfa.mongodb.net/" <br>
-ADMIN_EMAIL="admin@admin.com" <br>
-ADMIN_PASSWORD="admin343443" <br>
+    NODE_ENV = "production" <br>
+    PORT=2024 <br>
+    JWT_SECRET="d3v3l0pm3nt4c2e2" <br>
+    MONGO_DB_URL="mongodb://127.0.0.1:27017/tea-shop" # for local <br>
+    ATLAS_URL="mongodb+srv://tea-shop:1q2w3e4r5t6y@cluster0.ectfa.mongodb.net/" <br>
+    ADMIN_EMAIL="admin@admin.com" <br>
+    ADMIN_PASSWORD="admin343443" <br>
 
 4. **Run the development server:**
 
-npm run dev
+    npm run dev
 
 ## API Endpoints
 
 ### Authentication:
 
-POST /api/auth/register - Register a new user.<br>
-POST /api/auth/login - User login.<br>
+    POST /api/auth/register - Register a new user.<br>
+    POST /api/auth/login - User login.<br>
 
 ### User Management:
 
-GET /api/users - Get all users (admin only).<br>
-DELETE /api/users/:id - Delete a user (admin only).<br>
+    GET /api/users - Get all users (admin only).<br>
+    DELETE /api/users/:id - Delete a user (admin only).<br>
 
 ### Product Management:
 
-GET /api/products - Get all products.<br>
-POST /api/products - Add a new product (admin only).<br>
-PUT /api/products/:id - Update a product (admin only).<br>
-DELETE /api/products/:id - Delete a product (admin only).<br>
+    GET /api/products - Get all products.<br>
+    POST /api/products - Add a new product (admin only).<br>
+    PUT /api/products/:id - Update a product (admin only).<br>
+    DELETE /api/products/:id - Delete a product (admin only).<br>
 
 ### Categories:
 
-GET /api/categories - Get all categories.<br>
+    GET /api/categories - Get all categories.<br>
 
 ## About the Full Project
 
-This is the backend part of the Flying Teapot Shop project, which includes both frontend and backend development. <br>
-To see the full project, visit the repository: [Tea-shop-project](https://github.com/EvgeniyaItkina/FinalProjectTeaShop-React-Node-MongoDB-TS.)
+    This is the backend part of the Flying Teapot Shop project, which includes both frontend and backend development. <br>
+    To see the full project, visit the repository: [Tea-shop-project](https://github.com/EvgeniyaItkina/FinalProjectTeaShop-React-Node-MongoDB-TS.)
